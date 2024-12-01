@@ -6,5 +6,5 @@ print(f"Привіт, {name}")
 f = 1
 g = 7
 
-o = 1 + 7
+o = f + g
 print(o)
