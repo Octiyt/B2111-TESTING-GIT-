@@ -1,10 +1,21 @@
-print("hello world,i am a OCTI!!!")
+import random
 
-name = input("як тебе звуть?" )
-print(f"Привіт, {name}")
+rand = random.randint (1,10)
 
-f = 1
-g = 7
+pop = 3
 
-o = f + g
-print(o)
+for i in range(pop):
+    ans = int(input("Число от 1 - 10: "))
+
+    if rand == ans:
+        print("YOU WIN")
+        break
+    if rand > ans:
+        print("більше")
+    elif rand < ans:
+        print("менше")
+
+    print(f"У вас є {pop - i - 1} попиток.")
+else:
+    print(f"Програав")
+print(f"Число {rand} ")
